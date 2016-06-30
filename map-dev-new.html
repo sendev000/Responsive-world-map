@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html lang="">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+
+    <title>New Elements</title>
+
+
+
+    <!-- Bootstrap CSS -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script src="js/slippry.min.js"></script>
+
+    <script language="JavaScript" type="text/javascript" src="js/calendar.js"></script>
+
+    <script language="JavaScript" type="text/javascript" src="js/events.js"></script>
+
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <link rel="stylesheet" href="css/style-duc.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Roboto+Condensed:400,700,300|Raleway:400,200,300,100,500,600,700,800,900' rel='stylesheet' type='text/css'>
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/slippry.css" />
+
+    <script>
+
+                  $(function(){
+
+                    	$(".dropdown").hover(            
+
+                            function() {
+
+                                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+
+                                $(this).toggleClass('open');
+
+                                $('b', this).toggleClass("caret caret-up");                
+
+                            },
+
+                            function() {
+
+                                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+
+                                $(this).toggleClass('open');
+
+                                $('b', this).toggleClass("caret caret-up");                
+
+                            });
+
+                    }); 
+
+        </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+
+
+
+</head>
+
+<body onLoad="changedate('return')">
+
+<div class="header flatMenu">
+
+    <div class="container">
+        <div class="nav_logo">
+            <img src="img/logo_ifc.png" alt="logo">
+        </div>
+        <div class="tmenu">
+                    <div class="col-md-12 no-padding">
+                        <div class="flat-mega-menu">
+                            <div class="mlogo">
+                                <img src="img/logo_ifc.png" alt="logo">
+                            </div>
+                            <div class="search-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" placeholder="Search for...">
+                                    </div>
+                                </div>
+                            </div>                      
+                            <ul>
+                                <li><a href="#">About IFC</a>
+                                    <ul class="single-nav">                              
+                                      <li>
+                                          <a href="#">Leadership</a>
+                                      </li>
+                                      <li>
+                                          <a href="#">Where We Work<i class="fa fa-angle-double-right arrow"></i></a>
+                                          <ul class="drop-right">
+                                            <li><a href="#">EastAsia &amp; the Pacific</a></li>
+                                            <li><a href="#">Europe &amp; CentralAsia</a></li>
+                                            <li><a href="#">LatinAmerica &amp; the Carribean</a></li>
+                                            <li><a href="#">Middle East &amp; North Africa</a></li>
+                                            <li><a href="#">South Asia</a></li>
+                                            <li><a href="priorities.html">Sub-Saharan Africa</a></li>
+                                          </ul>
+                                      </li>
+                                      <li><a href="#">Partnerships</a>
+                                      </li>
+                                      <li><a href="#">IFC History</a>
+                                      </li>
+                                      
+                                  </ul>
+                                </li>
+                                <li>
+                                  <a href="#">Solutions</a>
+                                  <ul class="single-nav">
+                                    <li>
+                                      <a href="#">Services<i class="fa fa-angle-double-right arrow"></i></a>
+                                      <ul class="drop-right">
+                                          <li><a href="#">Loans</a></li>
+                                           <li><a href="#">Equity</a></li>
+                                            <li><a href="#">Trade and Supply-Chain Finance</a></li>
+                                            <li><a href="#">Syndications</a></li>
+                                            <li><a href="#">Treasury Client Solutions</a></li>
+                                            <li><a href="#">Asset Management</a></li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <a href="#">Expertise<i class="fa fa-angle-double-right arrow"></i></a>
+                                      <ul class="drop-right">
+                                          <li><a href="#">Agribusiness and Forestry</a></li>
+                                           <li><a href="#">Financial Institutions</a></li>
+                                            <li><a href="#">Funds</a></li>
+                                            <li><a href="#">Health and Education</a></li>
+                                            <li><a href="#">Infrastructure</a></li>
+                                            <li><a href="#">Manufacturing</a></li>
+                                            <li><a href="#">Oil,Gas,and Mining</a></li>
+                                            <li><a href="#">Telecommunications and IT</a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <a href="#">Sustainability</a>
+                                </li>
+                                <li>
+                                  <a href="#">News &amp; Events</a>
+                                </li>
+                                <li>
+                                  <a href="#">Resources</a>
+                                </li>
+                                <li><a href="#">Contacts</a></li>
+                                <li class="navi_search"><a href="#"><i class="fa fa-search"></i></a>
+                                    <ul class="single-nav">
+                                        <li class="srcli">
+                                            <form class="navi_search_form" role="search">
+
+                                              <div class="form-group">
+
+                                                <input type="text" class="form-control" placeholder="Search">
+
+                                                <input type="submit" value="" class="searchsubmit">
+
+                                              </div>
+
+                                          </form>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="langli"><a href='#'>ENGLISH</a>
+                                 <ul class="single-nav">
+                                    <li><a href="#">عربي</a></li>
+                                    <li><a href="#"> 简体中文</a></li>
+                                    <li><a href="#"> Français</a></li>
+                                    <li><a href="#"> 日本語</a></li>
+                                    <li><a href="#"> Português</a></li>
+                                    <li><a href="#"> Русский</a></li>
+                                    <li><a href="#"> Español</a></li>
+                                 </ul>
+                                </li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+
+    </div>
+
+</div><!-- End of header -->
+
+<div class="content">
+
+    <div class="container page">
+
+            
+
+        
+          <div class="col-md-10 col-lg-10 pad0">
+            <div class="col-md-12 col-lg-12">
+
+                <div class="col col12 intro">
+
+                    <div class="section-title">
+
+                        <h4>About IFC <i class="fa fa-angle-double-right"></i> Where we work <i class="fa fa-angle-double-right"></i><span>New Elements</span></h4>
+
+                    </div>
+
+                </div>
+
+            </div>               
+
+
+            <div class="dark-bar"></div> 
+
+            <div class="col-md-12 col-lg-12 pad0" style="overflow:hidden;">
+
+                <div class="col-md-12 col-lg-12" style="position: relative;overflow:hidden;"> <!--STARTS MAP HERE -->
+
+	                <h4>IFC MAP</h4>
+	                <script src="js/mapdata.js"></script>
+					<script src="js/worldmap.js"></script>
+                    <style>
+                    #map_describe{
+                        position: absolute;
+                        left: 20px;
+                        top: 400px;
+                    }
+                    #map_describe a{
+                        color: #666;
+                    }
+					#map_describe p{
+						padding: 0;
+						margin: 0;
+					}
+                    .area_1{
+                        border: 2px solid #eee; 
+                        float: left; 
+                        width: 22px; 
+                        height: 16px; 
+                    }
+                    .area_2{
+                        float: left; 
+                        margin-left: 5px !important;
+                        padding-top: 8px;
+                        font-size: 12px;
+                    }
+                    #latin{background-color: #f6a46c;}
+                    #eastasia{background-color: #7dbdcc;}
+                    #western{background-color: #96a6d5;}
+                    #subsaharan{background-color: #cecb94;}
+                    #middleeast{background-color: #f5e510;}
+                    #euroasia{background-color: #d595c2;}
+                    #southasia{background-color: #bad75e;}
+                    </style>
+					<div id="map"></div>
+                    <div id="map_describe">
+                        <div style="position: absolute; left: 0px; top: 0px; width: 220px; height: 20px;"><a href="#LatinAmerica"><p class="area_1" id="latin"></p><p class="area_2">Latin America &amp; the Caribbean</p></a></div>
+                        <div style="position: absolute; left: 0px; top: 20px; width: 190px; height: 20px;"><a href="#EastAsia"><p class="area_1" id="eastasia"></p><p class="area_2">East Asia &amp; the Pacific</p></a></div>
+                        <div style="position: absolute; left: 0px; top: 40px; width: 190px; height: 20px;"><a href="#WesternEurope"><p class="area_1" id="western"></p><p class="area_2">Western Europe</p></a></div>
+                        <div style="position: absolute; left: 0px; top: 60px; width: 190px; height: 20px;"><a href="#Sub-Saharan Africa"><p class="area_1" id="subsaharan"></p><p class="area_2">Sub-Saharan Africa</p></a></div>
+                        <div style="position: absolute; left: 0px; top: 80px; width: 190px; height: 20px;"><a href="#middleeast"><p class="area_1" id="middleeast"></p><p class="area_2">Middle East &amp; North Africa</p></a></div>
+                        <div style="position: absolute; left: 0px; top: 100px; width: 190px; height: 20px;"><a href="#euroasia"><p class="area_1" id="euroasia"></p><p class="area_2">Europe & Central Asia</p></a></div>
+                      <div style="position: absolute; left: 0px; top: 120px; width: 190px; height: 20px;"><a href="#southasia"><p class="area_1" id="southasia"></p><p class="area_2">South Asia</p></a></div>
+                    </div>
+                    <script type="text/javascript">
+						function detectmob() {
+						   if(window.innerWidth <= 800 || window.innerHeight <= 600) {
+							 return true;
+						   } else {
+							 return false;
+						   }
+						}
+						if (detectmob())
+						{
+							var wid = parseInt(document.getElementById('map').scrollWidth);
+							if (window.innerWidth > window.innerHeight)
+								$("#map_describe").css('top',parseInt(wid * 0.55 ) + 'px');
+							else
+								$("#map_describe").css('top',parseInt(wid * 0.58 ) + 'px');
+							$("#map_describe").css('width',wid + 'px');
+							$('#map_describe div').css('width',parseInt(wid * 0.5 ) + 'px');
+							$('#map_describe div').css('height',parseInt(wid * 0.04 ) + 'px');
+							$('#map_describe div').css('float','left');
+							$('#map_describe div').css('position','');
+							$('#map_describe div').css('top','');
+							$('#map_describe div').css('left','');
+							$('.area_2').css('font-size',parseInt(wid * 0.02 ) + 'px');
+						}
+					</script>
+            	</div><!--ENDS MAP HERE -->
+
+            </div> 
+
+            </div>
+          </div>
+
+                                    
+
+
+
+        
+
+    </div><!--End of class="container page" -->
+
+
+
+        
+
+</div><!--End of class="content" -->
+
+    
+
+   
+
+    
+
+
+
+<div class="footer">
+
+    <div class="container">
+
+        <div class="col-lg-6 col-sm-6 left-list">
+
+            <div class="col-lg-4 col-xs-4 item">
+
+                            <ul class="ifc">
+
+                                <li>
+
+                                    <h4>&copy; 2015 IFC</h4>
+
+                                </li>
+
+                                <li><a href="http://www.ifc.org/wps/wcm/connect/CORP_EXT_Content/IFC_External_Corporate_Site/IFC+Projects+Database/Projects/LegalDisclaimer">User Agreement</a>
+
+                                </li>
+
+                                <li><a href="http://www.ifc.org/wps/wcm/connect/CORP_EXT_Content/IFC_External_Corporate_Site/IFC+Projects+Database/Projects/Fraud_Corruption_Emails">E-mail Scams</a>
+
+                                </li>
+
+                                <li><a href="http://www.ifc.org/ifcext/corresmanage.nsf/frmInformationRequest?OpenForm&RequestType=General+Inquiry&">Webmaster</a>
+
+                                </li>
+
+                                <li><a href="http://www.worldbank.org/">World Bank Group</a>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="col-lg-4 col-xs-4 item">
+
+                            <ul class="resources">
+
+                                <li>
+
+                                    <h4>Resources for</h4>
+
+                                </li>
+
+                                <li><a href="http://www.ifc.org/wps/wcm/connect/corp_ext_content/ifc_external_corporate_site/what+we+do/about_ifc_financing">Clients</a>
+
+                                </li>
+
+                                <li><a href="http://www.ifc.org/investors">Investors</a>
+
+                                </li>
+
+                                <li><a href="http://www.ifc.org/wps/wcm/connect/corp_ext_content/ifc_external_corporate_site/ifc+news">Media</a>
+
+                                </li>
+
+                                <li><a href="http://www.ifc.org/wps/wcm/connect/CORP_EXT_Content/IFC_External_Corporate_Site/About+IFC/Partners+and+Stakeholders/">Stakeholders</a>
+
+                                </li>
+
+                                <li><a href="http://www.ifc.org/careers">Job Seekers</a>
+
+                                </li>
+
+                                </li>
+
+
+
+
+
+
+
+                            </ul>
+
+                        </div>
+
+                        <div class="col-lg-4 col-xs-4 item">
+
+                            <ul class="quick">
+
+                                <li>
+
+                                    <h4>Quick Links</h4>
+
+                                </li>
+
+                                <li><a href="http://google.com">Organization</a>
+
+                                </li>
+
+                                <li><a href="http://google.com">Solutions</a>
+
+                                </li>
+
+                                <li><a href="http://www.ifc.org/sustainability">Risk & Sustainability</a>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+        </div>
+
+        <div class="col-lg-6 col-xs-6 right-social">
+
+            <ul class="social-links">
+
+                <li><a href="#"><i class="fa fa-twitter-square"></i></a>
+
+                </li>
+
+                <li><a href="#"><i class="fa fa-facebook-square"></i></a>
+
+                </li>
+
+                <li><a href="#"><i class="fa fa-google-plus-square"></i></a>
+
+                </li>
+
+                <li><a href="#"><i class="fa fa-share-square"></i></a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="copyright">
+
+    <div class="container">
+
+        <ul class="copy-bottom">
+
+            <li>
+
+                <img src="img/wb_logo.jpg">
+
+            </li>
+
+            <li><a href="http://www.worldbank.org/en/about/what-we-do/brief/ibrd">IBRD</a>
+
+            </li>
+
+            <li><a href="http://www.worldbank.org/ida">IDA</a>
+
+            </li>
+
+            <li><a href="http://www.ifc.org/wps/wcm/connect/corp_ext_content/ifc_external_corporate_site/home">IFC</a>
+
+            </li>
+
+            <li><a href="https://www.miga.org/">MIGA</a>
+
+            </li>
+
+            <li><a href="https://icsid.worldbank.org/apps/ICSIDWEB/Pages/default.aspx">ICSID</a>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- jQuery -->
+
+<script>
+
+    $(function() {
+
+        var demo1 = $("#demo1").slippry({
+
+            // transition: 'fade',
+
+            // useCSS: true,
+
+            // speed: 1000,
+
+            // pause: 3000,
+
+            // auto: true,
+
+            // preload: 'visible',
+
+            // autoHover: false
+
+        });
+
+
+
+
+
+    });
+
+</script>
+
+
+
+<!-- Bootstrap JavaScript -->
+
+<script src="js/bootstrap.min.js"></script>
+
+
+<script src="js/plugins.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.meanmenu.js"></script>
+
+</body>
+
+</html>
